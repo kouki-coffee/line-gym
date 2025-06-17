@@ -1,8 +1,9 @@
 import requests
 import json
+import os
 
-ACCESS_TOKEN = "NUyEmcZG35WBLmFejy80h8j4zHheBuI1/F87NKNCbJmr92p0hrrEsorgIjGKrGmBD0hBicDHMFqBhpNvyzpWod9ccEByUyFx2X9xBNggheWHar4/7s+IQ1E/JCD8g1u9b/uWo50x/bz2ihWIF1sjwQdB04t89/1O/w1cDnyilFU="
-USER_ID = "Udbbe886b3396b1bb672e1e6fb980cc80"
+ACCESS_TOKEN = os.environ["LINE_ACCESS_TOKEN"]
+USER_ID = os.environ["LINE_USER_ID"]
 
 headers = {
     "Content-Type": "application/json",
